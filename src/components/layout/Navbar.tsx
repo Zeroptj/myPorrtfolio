@@ -68,12 +68,12 @@ export function Navbar() {
                           href={link.href}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="p-3 rounded-full bg-[#1a1a1a] border border-[#73D25D]/20 hover:border-[#73D25D]/40 hover:bg-[#73D25D]/10 transition-all duration-300"
+                          className="p-3 rounded-full bg-[#1a1a1a] border border-[#a8ada7]/20 hover:border-[#e2e3e2]/40 hover:bg-[#e2e3e2]/10 transition-all duration-300"
                           whileHover={{ scale: 1.1 }}
                           whileTap={{ scale: 0.95 }}
                           title={link.label}
                         >
-                          <Icon className="h-6 w-6 text-[#73D25D]" />
+                          <Icon className="h-6 w-6 text-[#a8ada7]" />
                         </motion.a>
                       )
                     })}
@@ -118,12 +118,12 @@ export function Navbar() {
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-3 rounded-full bg-[#1a1a1a] border border-[#73D25D]/20 hover:border-[#73D25D]/40 hover:bg-[#73D25D]/10 transition-all duration-300"
+                        className="p-3 rounded-full bg-[#1a1a1a] border border-[#a8ada7]/20 hover:border-[#e2e3e2]/40 hover:bg-[#e2e3e2]/10 transition-all duration-300"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
                         title={link.label}
                       >
-                        <Icon className="h-6 w-6 text-[#73D25D]" />
+                        <Icon className="h-6 w-6 text-[#a8ada7]" />
                       </motion.a>
                     )
                   })}

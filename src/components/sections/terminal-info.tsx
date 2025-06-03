@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 
-const terminalText = `My name is Piyawat Jittrawong, and I am currently working as an Assistant Fund Manager and Portfolio Engineer. I specialize in portfolio optimization, asset allocation, and risk management`
+const terminalText = `  My name is Piyawat Jittrawong, and I am currently working as an Assistant Fund Manager and Portfolio Engineer. I specialize in portfolio optimization, asset allocation, and risk management  `
 
 export function TerminalInfo() {
   const [displayText, setDisplayText] = useState('')
@@ -15,9 +15,9 @@ export function TerminalInfo() {
 
     const typeText = () => {
       if (index < terminalText.length) {
-        setDisplayText(prev => prev + terminalText[index])
+        setDisplayText(prev => prev + terminalText.charAt(index))
         index++
-        typingTimer = setTimeout(typeText, 30) // Adjust speed here
+        typingTimer = setTimeout(typeText, 25) // Adjust speed here
       } else {
         setIsTyping(false)
       }
@@ -57,4 +57,4 @@ export function TerminalInfo() {
       </div>
     </div>
   )
-} 
+}

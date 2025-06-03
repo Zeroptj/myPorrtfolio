@@ -1,4 +1,7 @@
 'use client'
+import { Project } from '@/components/sections/project';
+import { Skills } from '@/components/sections/skill';
+import { Experience } from '@/components/sections/experience'
 import { TerminalInfo } from '@/components/sections/terminal-info'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
@@ -95,6 +98,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <Skills />
+        <Project />
+        <Experience />
       </div>
     </main>
   );

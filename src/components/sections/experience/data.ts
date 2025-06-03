@@ -1,10 +1,6 @@
 import { IconType } from 'react-icons'
 import { 
-  FaChartLine,
-  FaBriefcase,
-  FaRocket,
-  FaLightbulb,
-  FaLeaf
+  FaRocket
 } from 'react-icons/fa'
 import { SiNextdotjs } from 'react-icons/si'
 

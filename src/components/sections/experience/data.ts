@@ -1,7 +1,5 @@
 import { IconType } from 'react-icons'
-import { 
-  FaRocket
-} from 'react-icons/fa'
+import { FaRocket } from 'react-icons/fa'
 import { SiNextdotjs } from 'react-icons/si'
 
 export interface Experience {

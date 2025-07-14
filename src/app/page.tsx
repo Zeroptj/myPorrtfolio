@@ -87,7 +87,7 @@ export default function Home() {
                 {/* Photo Container */}
                 <div className="relative flex h-full w-full items-center justify-center">
                   <Image
-                    src="/piyawat.png"
+                    src="/piyawat.jpg"
                     alt="Piyawat Jittrawong"
                     fill
                     className="object-cover"

@@ -25,7 +25,7 @@ export default function Home() {
                 transition={{ delay: 0.5 }}
               >
                 <motion.a
-                  href="https://drive.google.com/file/d/1uMAAH84WuRXORcDpoY6RDohQAwu4rojW/view"
+                  href="https://drive.google.com/file/d/1y6WFo2Do-Rb_C9bN1vaKx7ajFbQYcXK_/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group relative inline-flex items-center gap-3 px-6 py-3 bg-[#1a1a1a] rounded-xl overflow-hidden"

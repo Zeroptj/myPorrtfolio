@@ -21,6 +21,15 @@ const project = [
     description: 'MarketTrackingWeb is application that helps users track and visualize financial market data across various asset classes',
     year: '2025'
   },
+  {
+    name: 'AI-Portfolio Mornitoring',
+    logo: '/portfolio_mornitor.jpg',
+    href: 'https://github.com/Zeroptj/portfolio-monitor-ai/',
+    role: 'Project',
+    description: 'Personal portfolio monitoring tool with optional AI analysis. Bloomberg-style dark UI built with Next.js + Python FastAPI.',
+    year: '2026'
+  }
+
 ]
 
 export function Project() {
@@ -36,12 +45,12 @@ export function Project() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-3 max-w-6xl mx-auto items-stretch"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 max-w-6xl mx-auto items-stretch"
         >
-          {project.map((project, index) => (
+          {[...project].sort((a, b) => Number(b.year) - Number(a.year)).map((project, index) => (
             <motion.div
               key={project.name}
-              className="relative group"
+              className="relative group h-full"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -50,12 +59,12 @@ export function Project() {
                 href={project.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block"
+                className="block h-full"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <div className={`bg-[#1a1a1a] rounded-lg p-3 border ${project.role === 'Project' ? 'border-[#1de9b6]/30 hover:border-[#1de9b6]/50' : 'border-white/5 hover:border-white/20'} transition-colors`}>
-                  <div className="relative h-50 w-full flex items-center justify-center mb-2">
+                <div className={`bg-[#1a1a1a] rounded-lg p-3 border h-full flex flex-col ${project.role === 'Project' ? 'border-[#1de9b6]/30 hover:border-[#1de9b6]/50' : 'border-white/5 hover:border-white/20'} transition-colors`}>
+                  <div className="relative aspect-video w-full flex items-center justify-center mb-2">
                     <Image
                       src={project.logo}
                       alt={`${project.name} logo`}
